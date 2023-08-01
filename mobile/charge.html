@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- <link rel="icon" href="./icons/32.png" sizes="32x32" />
+    <link rel="icon" href="./icons/192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="./icons/180.png" /> -->
+    <!-- <link rel="shortcut icon" href="./icons/favicon.ico" /> -->
+    <!--
+      Notice the use of . in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "./favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/casino_font.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mobile-main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../plugin/bootstrap-toastr/toastr.css">
+    
+    <link rel="stylesheet" href="../css/pages/mobile/charge.css">
+
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/scrollToTop.js" type="text/javascript"></script>
+    <script src="../js/digitalClock.js" type="text/javascript"></script>
+    <script src="../plugin/bootstrap-toastr/toastr.js" type="text/javascript"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+
+    
+    <title>Casino Crown</title>
+  </head>
+  <body>
+    <script>
+    </script>
+    <div id="root">
+      <div class="mobile-app">
+          <div class="container-body">
+                <header class="mobile-header">
+                    <button class="home-btn" onclick="javascript:showSideBar()">메뉴 바로가기</button>
+                    <div class="header-logo user-header"></div>
+                    <img class="header-bg" src="../images/mobile/main_bg.png" alt="">
+                </header>
+                <div class="main">
+                        <div class="sub-header-container">
+                            <h3>충전신청</h3>
+                            <p>CHARGE</p>
+                        </div>
+                        <div class="container-page-charge main-container">
+                            <table>
+                                <tr>
+                                    <td>충전계좌</td>
+                                    <td>1.하나은행 273-910009-0554 알에스1텔레콤</td>
+                                </tr>
+                                <tr>
+                                    <td>예금주</td>
+                                    <td>홍길동
+                                        <span>가입시 등록된 예금주 명의로만 입금 가능하며 변경시 필히 고객센터에 문의 바랍니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>신청금액</td>
+                                    <td>
+                                        <div class="input-pane">
+                                            <input name="charge_money" id="charge_money" readonly="" value="0">
+                                            <p>원</p>
+                                        </div>
+                                        <span>* 최소 10,000원부터 입금 가능합니다.</span>
+                                        <div class="btn-groups">
+                                            <button onclick="javascript:onChangeAmount(10000)">10,000</button>
+                                            <button onclick="javascript:onChangeAmount(50000)">50,000</button>
+                                            <button onclick="javascript:onChangeAmount(100000)">100,000</button>
+                                            <button onclick="javascript:onChangeAmount(500000)">500,000</button>
+                                            <button onclick="javascript:onChangeAmount(0)">정정</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>신청후 금액</td>
+                                    <td>125,262 원</td>
+                                </tr>
+                            </table>
+                            <div class="warning-list">
+                                <h3>[입금 시 주의사항] 반드시 읽어주세요!</h3>
+                                <p>· 입금 전 반드시 입금하실 계좌번호 및 입금자명을 확인하시기바랍니다.</p>
+                                <p>· 입금 신청 후 30분 이내 미입금 시, 해당 신청건은 자동 취소 처리됩니다.</p>
+                                <p>· 입금자명과 입금된 금액이 신청 내용과 일치하는 경우, 최대 15분 이내로 입금 확인 및 보유머니로 전환됩니다.</p>
+                                <p>· 다음의 경우에는 입금 처리가 되지 않으며, 고객센터로 문의를 남겨주시길 바랍니다.</p>
+                                <p class="sub-tab">- 입금자명과 실제 입금된 명의가 다른 경우 반환 처리되니 주의해주시기 바랍니다.</p>
+                                <p>· 입금액 상이, 입금자명 불일치로 인한 입금 지연 문의 시에는 입금 여부 확인이 가능한 증빙자료를 고객센터로 보내주셔야 합니다.</p>
+                                <p class="sub-tab">- 입금자명, 계좌번호, 입금액, 입금시간을 확인 가능한 자료</p>
+                            </div>
+                            <button type="button" class="submit horizontal-center btn btn-secondary">충전 신청</button>
+                        </div>
+                    </div>
+                <div class="footer-container">
+                    <div class="footer-btn deposite-btn">
+                        <button class="charge-btn" onclick="javascript:onClickHeaderNav('charge')">머니충전</button>
+                    </div>
+                    <div class="footer-pane">
+                        <button onclick="javascript:onClickHeaderNav('FAQ')">고객센터</button>
+                        <button onclick="javascript:onClickHeaderNav()">파트너</button>
+                    </div>
+                    <div class="footer-btn withdraw-btn">
+                        <button class="float-right exchange-btn" onclick="javascript:onClickHeaderNav('exchange')">머니환전</button>
+                    </div>
+                </div>
+                <div class="sidebar-container" id="mobile_sidebar">
+                    <div class="sidebar-header">
+                        <img src="../images/crown_logo.png" class="sidebar-logo" onclick="javascript:onClickHeaderNav('home')">
+                        <div class="close-btn" onclick="javascript:hideSideBar()">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="sidebar-pane">
+                        <div class="user-info">
+                            <p class="user-name">
+                                <span>크라운0707</span> 님 환영합니다.
+                            </p>
+                            <p class="user-money">보유금액 : 
+                                <span>4,352,650</span>원
+                            </p>
+                            <p class="user-points">포인트 : 
+                                <span>1,069,346</span>P
+                            </p>
+                        </div>
+                        <div class="btn-pane inline">
+                            <button type="button" class="br-0 mr-2 btn btn-secondary" onclick="javascript:onClickHeaderNav('charge')">충전</button>
+                            <button type="button" class="br-0 btn btn-secondary" onclick="javascript:onClickHeaderNav('exchange')">환전</button>
+                        </div>
+                        <div class="menu-list">
+                            <h3>카지노<span>CASINO</span></h3>
+                            <p>- 에볼루션 카지노</p>
+                            <p>- 아시아게이밍</p>
+                            <p>- 슬롯 게임</p>
+                            <p>- 호텔 카지노</p>
+                        </div>
+                        <div class="menu-list">
+                            <h3>미니게임<span>MINIGAME</span></h3>
+                            <p>- 동행파워볼</p>
+                            <p>- 동행파워사다리</p>
+                            <p>- 3분코인파워볼</p>
+                            <p>- 5분코인파워볼</p>
+                        </div>
+                        <div class="menu-list" onclick="javascript:onClickHeaderNav('charge')">
+                            <h3>머니충전<span>DEPOSIT</span></h3>
+                        </div>
+                        <div class="menu-list" onclick="javascript:onClickHeaderNav('exchange')">
+                            <h3>머니환전<span>WITHDRAW</span></h3>
+                        </div>
+                        <div class="menu-list" onclick="javascript:onClickHeaderNav('FAQ')">
+                            <h3>고객센터<span>CUSTOMER</span></h3>
+                        </div>
+                        <div class="menu-list">
+                            <h3>파트너<span>PARTNER</span></h3>
+                        </div>
+                    </div>
+                    <div class="sidebar-footer">
+                        <button type="button" class="logout-btn btn btn-secondary" onclick="javascript:onClickHeaderNav('login')">로그아웃</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      function isOldIE() {
+        var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+        var msie = ua.indexOf('MSIE '); // IE 10 or older
+        var trident = ua.indexOf('Trident/'); //IE 11
+        return (msie > 0/* || trident > 0*/);
+      }
+      if(isOldIE()){
+        alert("Your Internet version is not supported. Please use Internet Explorer version 11 or above.");
+      }
+    </script>
+    <script src="../js/pages/mobile/charge.js" type="text/javascript"></script>
+
+  </body>
+</html>

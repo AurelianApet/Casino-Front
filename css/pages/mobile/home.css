@@ -1,0 +1,294 @@
+.container-page-main .mobile-sub-header{
+    font-size: 10px;
+    color: #329fc8;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.8);
+}
+.container-page-main .notice-badge{
+    background-color: #99221f;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+    margin-left: 20px;
+}
+#digital_clock{
+    margin-left: 7px;
+    color:  #c8c8c8;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.mobile-carousel{
+    height: 340px !important;
+}
+.mobile-carousel .banner-bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.mobile-carousel .carousel-indicators{
+    width: 100% !important;
+    margin: 0;
+    margin-bottom: 0;
+}
+.mobile-carousel .carousel-indicators li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #95989d;
+    border: 1px solid #95989d;
+    border-radius: 8px;
+}
+.mobile-carousel .carousel-indicators li.active{
+    background-color: #08bbff;
+    border: 1px solid #08bbff;
+}
+.mobile-carousel .carousel-inner{
+    height: 320px !important;
+}
+.mobile-carousel .item{
+    height: 320px !important;
+}
+.mobile-carousel .banner-pane{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mobile-carousel .banner-title{
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.mobile-carousel .banner-text{
+    font-size: 19px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+.games-container{
+    background-color: black;
+}
+.game-lists{
+    display: flex;
+    align-items: stretch;
+    padding-top: 5px;
+    height: 100px;
+}
+.game-lists .game-pane{
+    flex-grow: 1;
+    width: 50% !important;
+    margin-left: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all .1s;
+}
+.game-lists .game-pane:hover {
+  transform: scale(1.02)
+}
+.game-lists .game-pane:last-child{
+    margin-right: 5px;
+}
+.game-lists .game-pane .game-bg{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 0;
+}
+.game-lists .game-pane .game-infor{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+}
+.game-lists .game-pane .game-icon{
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 8px;
+    margin-bottom: 10px;
+}
+.game-lists .game-pane .game-title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 5px;
+}
+.game-lists .game-pane .game-title p{
+    color: #329fc8;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+.game-lists .game-pane .game-title span{
+    color: #c8c8c8;
+    font-size: 6px;
+}
+.game-lists .game-pane .game-logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 8px;
+    right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+@media screen and (min-width: 768px) {    
+  .container-page-main .mobile-sub-header{
+      font-size: 24px;
+      padding-bottom: 10px;
+  }
+    .container-page-main .notice-badge{
+        background-color: #99221f;
+        border-radius: 8px;
+        padding: 8px 24px;
+        color: white;
+        margin-left: 40px;
+    }
+    #digital_clock{
+        margin-left: 15px;
+        color: #c8c8c8;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .mobile-carousel{
+        height: 640px !important;
+    }
+    .mobile-carousel .carousel-indicators{
+        margin-bottom: 5px;
+    }
+    .mobile-carousel .carousel-indicators li{
+        width: 18px;
+        height: 18px;
+        margin: 6px;
+        border-radius: 18px;
+    }
+    .mobile-carousel .carousel-inner{
+        height: 600px !important;
+    }
+    .mobile-carousel .item{
+        height: 600px !important;
+    }
+    .mobile-carousel .banner-title{
+        font-size: 64px;
+    }
+    .mobile-carousel .banner-text{
+        font-size: 36px;
+    }
+    .games-container .game-lists{
+        height: 200px;
+    }
+    .games-container .game-pane{
+        margin-left: 5px;
+    }
+    .games-container .game-pane:last-child{
+        margin-right: 5px;
+    }
+    .games-container .game-pane .game-icon{
+        width: 40px;
+        height: 40px;
+        margin: 12px;
+    }
+    .games-container .game-pane .game-title{
+        margin-top: 10px;
+    }
+    .games-container .game-pane .game-title p{
+        font-size: 24px;
+    }
+    .games-container .game-pane .game-title span{
+        margin-top: -6px;
+        font-size: 12px;
+    }
+    .games-container .game-pane .game-logo{
+        width: 80px;
+        height: 120px;
+        bottom: 12px;
+        right: 10px;
+    }
+}
+@media screen and (min-width: 992px) {    
+  .container-page-main .mobile-sub-header{
+      font-size: 28px;
+      padding: 6px;
+      padding-bottom: 12px;
+  }
+  .container-page-main .notice-badge{
+        background-color: #99221f;
+        border-radius: 8px;
+        padding: 8px 24px;
+        color: white;
+        margin-left: 40px;
+    }
+    #digital_clock{
+        margin-left: 15px;
+        color: #c8c8c8;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .mobile-carousel{
+        height: 900px !important;
+    }
+    .mobile-carousel .carousel-indicators{
+        margin-bottom: 5px;
+    }
+    .mobile-carousel .carousel-indicators li{
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+        border-radius: 25px;
+    }
+    .mobile-carousel .carousel-inner{
+        height: 840px !important;
+    }
+    .mobile-carousel .item{
+        height: 840px !important;
+    }
+    .mobile-carousel .banner-title{
+        font-size: 90px;
+    }
+    .mobile-carousel .banner-text{
+        font-size: 48px;
+    }
+    .games-container .game-lists{
+        height: 270px;
+    }
+    .games-container .game-pane{
+        margin-left: 10px;
+    }
+    .games-container .game-pane:last-child{
+        margin-right: 10px;
+    }
+    .games-container .game-pane .game-icon{
+        width: 45px;
+        height: 45px;
+        margin: 20px;
+    }
+    .games-container .game-pane .game-title{
+        margin-top: 12px;
+    }
+    .games-container .game-pane .game-title p{
+        font-size: 32px;
+    }
+    .games-container .game-pane .game-title span{
+        margin-top: -8px;
+        font-size: 16px;
+    }
+    .games-container .game-pane .game-logo{
+        width: 100px;
+        height: 150px;
+        bottom: 16px;
+        right: 12px;
+    }
+}

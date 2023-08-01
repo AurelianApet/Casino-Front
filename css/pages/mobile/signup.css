@@ -1,0 +1,146 @@
+.container-page-register{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.container-page-register .logo{
+    align-self: center;
+    width: 25%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.container-page-register .auth-pane{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+}
+.auth-pane .input-pane{
+    margin-bottom: 20px;
+}
+.auth-pane .input-pane .phone-number{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+.auth-pane .input-pane .phone-number select{
+    width: 70px;
+}
+.auth-pane .input-pane .account-number{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 10px;
+}
+.auth-pane .input-pane .account-number input{
+    width: 80px;
+}
+.auth-pane .input-pane .input-title{
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+ .auth-pane .input-title.account-title{
+    margin-top: 3px;
+ }           
+.auth-pane .input-pane input{
+    font-size: 11px;
+    padding: 4px;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100%;
+}
+.auth-pane .input-pane input::placeholder{
+    color: #cccccc;
+}
+.auth-pane .input-pane select{
+    font-size: 11px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+.auth-pane .input-pane select:focus{
+    outline: none;
+}
+.auth-pane .input-pane span{
+    color: white;
+    top: 30px;
+    position: absolute;
+    font-size: 8px;
+}
+.auth-pane .btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.auth-pane .btn-container button{
+    width: 100px;
+    background-image: url('../../../images/components/blue_btn.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 8px;
+    margin: 3px;
+    color: white;
+}
+.auth-pane .btn-container .cancel-btn{
+    background-image: url('../../../images/components/grey_btn.png');
+}
+
+@media screen and (min-width: 768px) {
+        .auth-pane .input-pane{
+            margin: 0 25px;
+            margin-bottom: 40px;
+        }
+        .auth-pane .phone-number select{
+            width: 140px !important;
+        }
+        .auth-pane .account-number{
+            margin-bottom: 10px;
+        }
+        .auth-pane .account-number input{
+            width: 160px !important;
+        }
+        .auth-pane .input-title{
+            font-size: 25px !important;
+        }
+        .auth-pane select{
+            font-size: 25px !important;
+            padding: 8px !important;
+            padding-left: 16px !important;
+            margin-right: 10px !important;
+        }
+        .auth-pane input{
+            font-size: 25px !important;
+            padding: 8px !important;
+            padding-left: 16px !important;
+            margin-right: 10px !important;
+        }
+        .auth-pane span{
+            top: 58px !important;
+            font-size: 15px !important;
+        }
+        .auth-pane .btn-container button{
+            width: 200px;
+            font-size: 25px;
+            padding: 12px;
+        }
+    }

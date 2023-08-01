@@ -1,0 +1,49 @@
+.container-page-FAQ{
+  padding-right: 20px;
+  padding-bottom: 200px;
+}
+.container-page-FAQ .btn-pane{
+    display: flex;
+    justify-content: flex-end;
+}
+.container-page-FAQ .btn-FAQ{
+    margin: 20px 0;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #08bbff;
+    color: black;
+    font-size: 15px;
+}
+.container-page-FAQ .FAQ-list{
+    margin-top: 10px;
+}
+.container-page-FAQ .FAQ-list .FAQ-pane{
+    display: flex;
+    justify-content: stretch;
+    padding: 7px 0;
+    border-bottom: 1px solid white;
+}
+
+.container-page-FAQ .FAQ-list .FAQ-title{
+    flex: 1;
+    font-size: 18px;
+    color: white;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.container-page-FAQ .FAQ-list .FAQ-date{
+    width: 100px;
+    text-align: right;
+    font-size: 13px;
+    color: #fff26f;
+}
+.container-page-FAQ .read-more{
+    margin-top: 80px;
+    padding: 8px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: #08bbff;
+    color: black;
+    font-size: 15px;
+}

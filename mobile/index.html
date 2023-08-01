@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- <link rel="icon" href="./icons/32.png" sizes="32x32" />
+    <link rel="icon" href="./icons/192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="./icons/180.png" /> -->
+    <!-- <link rel="shortcut icon" href="./icons/favicon.ico" /> -->
+    <!--
+      Notice the use of . in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "./favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/casino_font.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mobile-main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../plugin/bootstrap-toastr/toastr.css">
+
+    <link rel="stylesheet" href="../css/pages/mobile/index.css">
+
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/scrollToTop.js" type="text/javascript"></script>
+    <script src="../js/digitalClock.js" type="text/javascript"></script>
+    <script src="../plugin/bootstrap-toastr/toastr.js" type="text/javascript"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+
+
+    <title>Casino Crown</title>
+</head>
+
+<body>
+    <script>
+    </script>
+    <div id="root">
+        <div class="mobile-app">
+            <div class="container-body">
+                <div class="mobile-header">
+                    <div class="header-btn-container w-100 d-flex justify-content-between align-items-center">
+                        <button class="header-btn login-btn">로그인</button>
+                        <button class="header-btn signup-btn">회원가입</button>
+                    </div>
+                    <div class="welcome-container p-5">
+                        <img src="../images/mobile/txt_welcome_.png" />
+                    </div>
+                    <div class="mobile-sub-header p-2">
+                        <span class="notice-badge">공지사항</span>
+                        <span id="digital_clock">2021-02-01</span> ※소셜쿠폰 이용안내※
+                    </div>
+                </div>
+                <div class="container-page-main contents py-1">
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal('casino')">
+                            <img src="../images/mobile/casino.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal('slot')">
+                            <img src="../images/mobile/slot.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal('mini')">
+                            <img src="../images/mobile/mini.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal('hotel')">
+                            <img src="../images/mobile/ball.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal(0)">
+                            <img src="../images/mobile/bota.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="game-item" onclick="openGameModal(0)">
+                            <img src="../images/mobile/dong.png" />
+                            <!-- <img src="./images/casinomask.png" /> -->
+                            <img src="../images/mobile/mousover_1.png" />
+                            <div class="focus-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="noti-container">
+                    <div class="noti-header">
+                        <button class="btn noti-btn notibtn-noti" type="button" onclick="handleNotiTabs('noti')">공지사항</button>
+                        <button class="btn noti-btn notibtn-event" type="button" onclick="handleNotiTabs('event')">이벤트</button>
+                    </div>
+                    <div class="noti-body p-2">
+                        <div class="noti-tab-noti">
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※소셜쿠폰 이용안내※</span></div>
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※기록삭제 및 쿠키제공방법※</span></div>
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※소셜쿠폰 이용안내※</span></div>
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※기록삭제 및 쿠키제공방법※</span></div>
+                        </div>
+                        <div class="noti-tab-event">
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※소셜쿠폰 이용안내※</span></div>
+                            <div class="noti-item p-2">2022-02-01&nbsp;&nbsp;&nbsp;<span>※기록삭제 및 쿠키제공방법※</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <div class="row no-gutters">
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" style="width: 25px !important;" src="../images/mobile/menu_point.png" />
+                                </div>
+                                <p>포인트 내역</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_coupon.png" />
+                                </div>
+                                <p>쿠폰 내역</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_partner.png" />
+                                </div>
+                                <p>파트너 제휴</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_question.png" />
+                                </div>
+                                <p>자주 묻는 질문</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_notice.png" />
+                                </div>
+                                <p>공지사항</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_service.png" />
+                                </div>
+                                <p>고객센터</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_promotion.png" />
+                                </div>
+                                <p>프로모션</p>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2">
+                            <div class="w-100 d-flex flex-column menu-item align-items-between">
+                                <div class="m-2 menuimage-container" style="height: 40px;">
+                                    <img class="w-100" src="../images/mobile/menu_livechat.png" />
+                                </div>
+                                <p>라이브챗</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn version-btn my-3">PC버전</button>
+                    </div>
+                </div>
+                <div class="mark-container">
+                    <div class="container-custom p-3 d-flex align-items-center justify-content-center">
+                        <span>Copyright 2022 <span class = "footer-quality">Quality</span> Casino. All right reserved.</span>
+                    </div>
+                </div>
+                <div class="footer-container mt-1">
+                    <div class="footer-btn deposite-btn">
+                        <button class="charge-btn">머니충전</button>
+                    </div>
+                    <div class="footer-btn withdraw-btn">
+                        <button class="float-right exchange-btn">머니환전</button>
+                    </div>
+                </div>
+                <div style="left: -68%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gameModalMobile">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="header-container">
+                        <img class="header-image-casino" src='../images/mobile/casinotxt.png' />
+                        <img class="header-image-mini" clas src='../images/mobile/minitxt.png' />
+                        <img class="header-image-slot" clas src='../images/mobile/slottxt.png' />
+                        <img class="header-image-hotel" clas src='../images/mobile/hoteltxt.png' />
+                    </div>
+
+                    <button type="button" class="close d-flex" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="tab-casino">
+                        <div class="row no-gutters">
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/casino-1.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>에볼루션 카지노</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/casino-2.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>AG 아이게이밍</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/casino-3.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>AE SEXY 게이밍</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-slot">
+                        <div class="row no-gutters">
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/slot-1.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>프라그마틱 슬롯</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/slot-2.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>넥스트스핀 슬롯</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-mini">
+                        <div class="row no-gutters">
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/mini-1.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>동행 파워볼</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/mini-2.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>동행 파워사다리</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/mini-3.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>보글 파워볼</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/mini-4.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>보글 사다리</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-hotel">
+                        <div class="row no-gutters">
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/hotel-1.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>호텔카지노(보타)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div class="subgame-item w-100">
+                                    <div class="image-container w-100">
+                                        <img src="../images/mobile/hotel-2.png" />
+                                        <img class="hover-image" src="../images/mobile/modalmouseover.png" />
+                                    </div>
+                                    <div class="text-container p-2 text-center">
+                                        <p>호텔카지노(광동)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function isOldIE() {
+            var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+            var msie = ua.indexOf('MSIE '); // IE 10 or older
+            var trident = ua.indexOf('Trident/'); //IE 11
+            return (msie > 0 /* || trident > 0*/ );
+        }
+        if (isOldIE()) {
+            alert("Your Internet version is not supported. Please use Internet Explorer version 11 or above.");
+        }
+
+        function handleNotiTabs(tabType) {
+            $('[class *= "noti-tab-"').addClass('d-none');
+            $(`.noti-tab-${tabType}`).removeClass('d-none');
+        }
+        $(function() {
+            handleNotiTabs('noti');
+        })
+
+        function openGameModal(tabType) {
+            $('#gameModalMobile').modal()
+            handleHeaderTag(tabType)
+        }
+
+        function handleHeaderTag(tabType, event) {
+            let tabs = $('[class *= "tab-"]');
+            tabs.addClass('d-none');
+            $(`.tab-${tabType}`).removeClass('d-none')
+            let tabsheads = $('[class *= "header-image-"]');
+            tabsheads.addClass('d-none');
+            $(`.header-image-${tabType}`).removeClass('d-none')
+        }
+    </script>
+    <script src="../js/pages/mobile/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.container-page-charge{
+  padding-bottom: 200px;
+}
+table{
+    width: calc(100% - 20px);
+    font-size: 18.5px;
+    color: white;
+    margin: 8px;
+    font-weight: 700;
+}
+td{
+    border: 1px solid white;
+    padding: 25px 40px;
+}
+td:first-child{
+    text-align: center;
+    border-left: none;
+    width: 170px;
+}
+td:last-child{
+    border-right: none;
+}
+td span{
+    display: block;
+    font-size: 15px;
+    color: #ff334b;
+}
+td .input-pane{
+    display: flex;
+    margin-bottom: 2px;
+}
+td .input-pane input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px;
+    padding-left: 8px;
+    color: white;
+}
+td .input-pane p{
+    text-align: center;
+    padding-top: 4px;
+    margin-left: 5px;
+}
+td .btn-groups{
+    display: flex;
+    justify-content: stretch;
+    margin-top: 6px;
+}
+td .btn-groups button{
+    flex: 1;
+    margin-left: 3px;
+    background-color: #cee0ff;
+    color: #151515;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    cursor: pointer;
+}
+.warning-list{
+    margin: 5px;
+    margin-top: 2 0px;
+}
+.warning-list h3{
+    margin: 10px 0;
+    color: #ff334b;
+    font-size: 18.5px;
+}
+.warning-list p{
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+.warning-list .sub-tab{
+    text-indent: 10px;
+}
+.submit{
+    margin-top: 50px;
+    height: 52px;
+    width: 138px;
+    border-radius: 5px;
+    background-color: #08bbff;
+    color: black;
+    font-size: 18.5px;
+}

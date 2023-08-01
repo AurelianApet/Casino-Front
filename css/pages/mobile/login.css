@@ -1,0 +1,66 @@
+.container-page-login{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 75%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+}
+.container-page-login .logo{
+    align-self: center;
+    width: 40%;
+    height: auto;
+    margin-bottom: 15%;
+}
+.auth-pane .input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+.auth-pane .input-container input{
+    font-size: 18px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+.auth-pane .btn-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+.auth-pane .btn-container button{
+    width: 100%;
+    background-image: url('../../../images/components/blue_btn.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    margin-bottom: 10px;
+}
+.auth-pane .btn-container .cancel-btn{
+    background-image: url('../../../images/components/grey_btn.png');
+}
+
+@media screen and (min-width: 768px) {
+    .auth-pane .input-container input{
+        font-size: 32px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .auth-pane .btn-container button{
+        width: 100%;
+        border: none;
+        font-size: 36px;
+        padding: 18px;
+        color: white;
+        margin-bottom: 20px;
+    }
+  }

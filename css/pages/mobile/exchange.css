@@ -1,0 +1,122 @@
+table{
+    width: calc(100% - 20px);
+    font-size: 12px;
+    color: white;
+    margin: 5px;
+  }
+  td{
+      border: 1px solid grey;
+      padding: 12px 8px;
+  }
+  td:first-child{
+      text-align: center;
+      border-left: none;
+      width: 100px;
+  }
+  td:last-child{
+      border-right: none;
+  }
+  tr span{
+      display: block;
+      font-size: 8px;
+      margin: 4px;
+      color: #ff334b;
+  }
+  table .input-pane{
+      display: flex;
+      margin-bottom: 2px;
+  }
+  table .input-pane input{
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 3px;
+      padding: 3px;
+      padding-left: 8px;
+      color: white;
+  }
+  table .input-pane p{
+      text-align: center;
+      padding-top: 4px;
+      margin-left: 5px;
+  }
+  table .btn-groups{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
+  table .btn-groups button{
+      width: 30%;
+      margin-right: 3px;
+      margin-bottom: 5px;
+      background-color: #cee0ff;
+      color: #000;
+      border-radius: 5px;
+      border: none;
+      font-size: 10px;
+      padding: 5px;
+  }
+  .submit{
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #08bbff;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  table{
+  font-size: 24px;
+  margin: 5px;
+  }
+  td{
+      padding: 15px;
+  }
+  td:first-child{
+  width: 180px;
+  }
+  tr span{
+  font-size: 18px;
+  }
+  table .input-pane input{
+      border-radius: 5px;
+  }
+  .btn-groups button{
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 20px;
+      padding: 6px 0;
+  }
+  .submit{
+      margin-top: 20px;
+      padding: 15px 40px;
+      border-radius: 8px;
+      font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  table{
+  font-size: 30px;
+  }
+  td{
+      padding: 20px;
+  }
+  td:first-child{
+  width: 200px;
+  }
+  tr span{
+  font-size: 24px;
+  }
+  .btn-groups button{
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 26px;
+      padding: 8px 0;
+  }
+  .submit{
+      padding: 18px 45px;
+      border-radius: 8px;
+      font-size: 28px;
+  }
+}

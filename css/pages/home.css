@@ -1,0 +1,188 @@
+.games-container {
+  background-color: black;
+}
+
+.game-lists {
+  display: flex;
+  align-items: stretch;
+  padding-top: 10px;
+}
+
+.game-lists:first-child {
+  height: 180px;
+}
+
+.game-lists:nth-child(2) {
+  height: 200px;
+}
+
+.game-lists:nth-child(2) p {
+  font-size: 20px !important;
+  letter-spacing: -2px;
+}
+
+.game-lists:nth-child(2) span {
+  letter-spacing: -1px;
+}
+
+.game-lists:nth-child(2) .game-icon {
+  margin-left: 5px !important;
+  margin-bottom: 16px !important;
+}
+
+.game-lists:nth-child(2) .game-logo {
+  right: 5px !important;
+}
+
+.game-lists:nth-child(3) {
+  height: 200px;
+  padding-bottom: 5px;
+}
+
+.game-lists:nth-child(3) .game-logo {
+  right: 15px !important;
+}
+
+.game-pane {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.game-pane:hover {
+  transform: scale(1.02)
+}
+
+.game-pane:last-child {
+  margin-right: 10px;
+}
+
+.game-pane .game-bg {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.game-pane .game-infor {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 60px;
+  z-index: 1;
+}
+
+.game-pane .game-icon {
+  margin-top: 14px;
+  margin-left: 18px;
+  margin-bottom: 16px;
+}
+
+.game-pane .game-title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 16px;
+}
+
+.game-pane p {
+  color: #329fc8;
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.game-pane span {
+  color: grey;
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.game-pane .game-logo {
+  position: absolute;
+  bottom: 12px;
+  right: 5px;
+}
+
+.carousel {
+  height: 340px !important;
+}
+
+.carousel .carousel-indicators {
+  bottom: 0;
+  left: 0;
+  width: 380px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.carousel .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 2.5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #95989d;
+  border: 1px solid #95989d;
+  border-radius: 7px;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #08bbff;
+  border: 1px solid #08bbff;
+}
+
+.carousel .carousel-inner {
+  height: 310px !important;
+}
+
+.carousel .carousel-inner .item {
+  height: 310px !important;
+}
+
+.carousel .carousel-inner .banner-pane {
+  height: 100%;
+  width: 380px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  letter-spacing: -1px;
+}
+
+.carousel .carousel-inner .banner-pane .banner-title {
+  font-size: 41px;
+  font-style: italic;
+  padding-bottom: 6px;
+  letter-spacing: -2px;
+}
+
+.carousel .carousel-inner .banner-pane .banner-text {
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 1px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.carousel .carousel-inner .banner-pane button {
+  font-size: 14px;
+  width: 200px;
+  height: 40px;
+  align-self: center;
+  margin-top: 10px;
+}

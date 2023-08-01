@@ -1,0 +1,76 @@
+.container-page-register{
+    margin-top: 25px;
+    padding-bottom: 200px;
+    flex: 1;
+}
+.container-page-register .input-container .input-pane{
+    margin-bottom: 15px;
+}
+.container-page-register .input-container .input-pane .phone-number{
+    display: flex;
+    justify-content: stretch;
+}
+.container-page-register .input-container .input-pane .phone-number select{
+    width: 70px;
+}
+.container-page-register .input-container .input-pane .account-number input{
+    width: 100px;
+}
+.container-page-register .input-container .input-pane .account-number{
+    display: flex;
+    justify-content: stretch;
+}
+.container-page-register .input-container .input-pane input{
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 100%;
+}
+.container-page-register .input-container .input-pane input::placeholder{
+    color: #cccccc;
+}
+.container-page-register .input-container .input-pane select{
+    font-size: 15px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 100%;
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.container-page-register .input-container .input-pane select:focus{
+    outline: none;
+}
+.container-page-register .input-container .input-pane .input-title{
+    font-size: 19px;
+    font-weight: 700px;
+    color: white;
+    text-align: right;        
+}
+.container-page-register .input-container .input-pane p{
+    font-size: 12px;
+    color: #c8c8c8;
+    vertical-align: middle;
+}
+.container-page-register .btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 80px;
+}
+.container-page-register .btn-container .submit{
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #08bbff;
+    color: black;
+    font-size: 19.5px;
+}
